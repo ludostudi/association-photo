@@ -24,6 +24,7 @@ ul {
   font-family: "Raleway", sans-serif;
   font-size: 0.93rem;
   font-weight: 400;
+  color: #08132c;
 }
 
 .title-1 {
@@ -39,7 +40,6 @@ ul {
 .header__logo {
   width: 20rem;
   flex-shrink: 0;
-  margin-right: 3rem;
 }
 .header__navbar {
   flex-grow: 1;
