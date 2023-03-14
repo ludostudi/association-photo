@@ -1,3 +1,55 @@
-body {
-  background-color: yellow;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.flux {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.93rem;
+  font-weight: 400;
+}
+
+.title-1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  padding: 1.5rem 0;
+}
+.header__logo {
+  width: 20rem;
+  flex-shrink: 0;
+  margin-right: 3rem;
+}
+.header__navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5.5rem;
+}
+.header__main-pages {
+  display: flex;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }/*# sourceMappingURL=style.css.map */
