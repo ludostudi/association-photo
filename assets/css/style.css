@@ -1,3 +1,19 @@
+.button--black, .home--cover__paragraphe, .header__main-pages {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.93rem;
+  font-weight: 400;
+}
+
+.home--cover__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+.home--cover__title, .home--cover__paragraphe, .home--cover__image {
+  color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,19 +36,6 @@ ul {
   margin-right: auto;
 }
 
-* {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.93rem;
-  font-weight: 400;
-  color: #08132c;
-}
-
-.title-1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 3.6rem;
-  font-weight: 400;
-}
-
 .header {
   display: flex;
   padding: 1.5rem 0;
@@ -52,4 +55,24 @@ ul {
   display: flex;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.home--cover {
+  background-color: green;
+}
+.button, .button--black {
+  border-radius: 5px;
+  padding: 1.5rem 4.5rem;
+}
+.button--black {
+  background-color: #000;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid white;
+}
+.button:hover, .button--black:hover {
+  background-color: #ffffff;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+@use "../utils/_main" as utils
+    
 .header
     display: flex
     padding: 1.5rem 0
@@ -16,3 +18,4 @@
     &__main-pages
         display: flex
         column-gap: 3rem
+        @extend %default
