@@ -6,11 +6,11 @@
 
 .home--cover__title {
   font-family: "Raleway", sans-serif;
-  font-size: 3.6rem;
+  font-size: 4.6rem;
   font-weight: 400;
 }
 
-.home--cover__title, .home--cover__paragraphe, .home--cover__image {
+.home--cover__title, .home--cover__paragraphe {
   color: #ffffff;
 }
 
@@ -38,7 +38,7 @@ ul {
 
 .header {
   display: flex;
-  padding: 1.5rem 0;
+  padding: 1.4rem 0;
 }
 .header__logo {
   width: 20rem;
@@ -58,19 +58,34 @@ ul {
 }
 
 .home--cover {
-  background-color: green;
+  display: flex;
+  height: 100vh;
+  background-image: url("../images/appareil-photo-professionnel-flou.jpg");
+  background-size: cover;
+  background-position: center;
 }
+.home--cover__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+}
+.home--cover__paragraphe {
+  margin: 1rem 0 2rem 0;
+}
+
 .button, .button--black {
   border-radius: 5px;
   padding: 1.5rem 4.5rem;
 }
 .button--black {
   background-color: #000;
+  border: 2px solid white;
+  border-radius: 50px;
   color: #ffffff;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
-  border: 2px solid white;
 }
 .button:hover, .button--black:hover {
   background-color: #ffffff;

@@ -1,8 +1,18 @@
 @use "../utils/_main" as utils
 
 .home--cover
-    background-color: green
+    display: flex
+    height: 100vh
+    background-image: url("../images/appareil-photo-professionnel-flou.jpg")
+    background-size: cover
+    background-position: center     
 
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 15rem
+    
     &__title
         @extend %text-white
         @extend %title-1
@@ -10,7 +20,4 @@
     &__paragraphe
         @extend %default
         @extend %text-white
-
-    &__image
-        @extend %text-white
-             
+        margin: 1rem 0 2rem 0
