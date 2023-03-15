@@ -71,7 +71,10 @@ ul {
   margin-top: 15rem;
 }
 .home--cover__paragraphe {
-  margin: 1rem 0 2rem 0;
+  margin: 1rem;
+}
+.home--cover__link {
+  margin-top: 2rem;
 }
 
 .button, .button--black {
