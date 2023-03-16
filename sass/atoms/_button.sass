@@ -1,24 +1,30 @@
 @use "../utils/_main" as utils
     
 .button
-    border-radius: 5px
-    
+    @extend %default
+    border-radius: 50px
     padding: 1.5rem 4.5rem
+    color: utils.$color-white
+    font-size: 0.75rem
+    font-weight: 600
+    text-transform: uppercase
     
 
     &--black
         @extend .button
-        @extend %default
         background-color: utils.$color-black
         border: 2px solid white
-        border-radius: 50px
-        color: utils.$color-white
-        font-size: 0.75rem
-        font-weight: 600
-        text-transform: uppercase
         
-
-    &:hover
+    &--black:hover
         background-color: utils.$color-white
         color: utils.$color-black
 
+    &--orange
+        @extend .button
+        background-color: utils.$color-orange
+        border: 2px solid black
+
+    &--orange:hover
+        background-color: utils.$color-black
+        color: utils.$color-orange
+        border: 2px solid utils.$color-orange
