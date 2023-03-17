@@ -10,13 +10,13 @@
   font-weight: 400;
 }
 
-.home--discovery__title {
+.home--calendar__title, .home--discovery__title {
   font-family: "Raleway", sans-serif;
   font-size: 2.6rem;
   font-weight: 300;
 }
 
-.home--discovery__title, .header__main-pages {
+.home--calendar__title, .home--discovery__title, .header__main-pages {
   color: #a2894d;
 }
 
@@ -121,6 +121,49 @@ ul {
 .home--discovery__svg {
   width: 35%;
   height: auto;
+}
+
+.home--calendar__container {
+  background-color: rgba(207, 201, 201, 0.2156862745);
+  border-radius: 3rem;
+  display: flex;
+  height: auto;
+  margin-top: 5rem;
+}
+.home--calendar__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.home--calendar__svg {
+  width: 37.5%;
+  height: auto;
+}
+.home--calendar__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem 2rem 4rem;
+}
+.home--calendar__title {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+.home--calendar__paragraphe {
+  text-align: justify;
+  margin-top: 2rem;
+}
+.home--calendar__link {
+  margin: 3rem auto 0;
+}
+
+.footer {
+  background-color: green;
+}
+.footer__container {
+  display: flex;
+  margin-top: 5rem;
 }
 
 .button, .button--orange, .button--black {

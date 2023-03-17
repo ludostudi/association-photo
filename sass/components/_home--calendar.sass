@@ -1,0 +1,40 @@
+@use "../utils/_main" as utils
+
+.home--calendar
+    //background-color: green
+    
+    &__container
+        background-color: utils.$color-greylight
+        border-radius: 3rem
+        display: flex
+        height: auto
+        margin-top: 5rem
+
+    &__media
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 70%
+
+    &__svg
+        width: 37.5%
+        height: auto
+
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 4rem 2rem 4rem
+
+    &__title
+        margin-top: 2rem
+        text-transform: uppercase
+        @extend %text-orange
+        @extend %title-2
+
+    &__paragraphe
+        text-align: justify
+        margin-top: 2rem
+
+    &__link
+        margin: 3rem auto 0
