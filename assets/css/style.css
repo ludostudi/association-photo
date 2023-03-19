@@ -1,4 +1,4 @@
-.button, .button--black, .button--orange, .club--exit__text, .club--about__text, .club--cover__paragraphe, .home--cover__paragraphe, .header__main-pages {
+.button, .button--black, .button--orange, .club--exit__paragraphe, .club--about__text, .club--cover__paragraphe, .home--calendar__paragraphe, .home--discovery__paragraphe, .home--cover__paragraphe, .header__main-pages {
   font-family: "Raleway", sans-serif;
   font-size: 0.93rem;
   font-weight: 400;
@@ -297,6 +297,7 @@ ul {
 .club--exit__image {
   width: 95%;
   height: auto;
+  border-radius: 3rem;
 }
 .club--exit__text {
   display: flex;
@@ -307,7 +308,7 @@ ul {
 .club--exit__paragraphe {
   text-align: center;
   margin-top: 2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.15rem;
 }
 
 .button, .button--orange, .button--black {
