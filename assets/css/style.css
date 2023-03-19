@@ -1,16 +1,16 @@
-.button, .button--black, .button--orange, .home--cover__paragraphe, .header__main-pages {
+.button, .button--black, .button--orange, .club--exit__text, .club--about__text, .club--cover__paragraphe, .home--cover__paragraphe, .header__main-pages {
   font-family: "Raleway", sans-serif;
   font-size: 0.93rem;
   font-weight: 400;
 }
 
-.home--cover__title {
+.club--cover__title, .home--cover__title {
   font-family: "Raleway", sans-serif;
   font-size: 4.6rem;
   font-weight: 400;
 }
 
-.home--calendar__title, .home--discovery__title {
+.club--exit__title, .home--calendar__title, .home--discovery__title {
   font-family: "Raleway", sans-serif;
   font-size: 2.6rem;
   font-weight: 300;
@@ -22,17 +22,23 @@
   font-weight: 400;
 }
 
+.club--about__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 .footer__copyright-text {
   font-family: "Raleway", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
 }
 
-.footer__follow-title, .footer__where-title, .footer__contact-title, .home--calendar__title, .home--discovery__title, .header__main-pages {
+.club--exit__title, .club--about__title, .footer__follow-title, .footer__where-title, .footer__contact-title, .home--calendar__title, .home--discovery__title, .header__main-pages {
   color: #a2894d;
 }
 
-.home--cover__title, .home--cover__paragraphe {
+.club--cover__title, .club--cover__paragraphe, .home--cover__title, .home--cover__paragraphe {
   color: #ffffff;
 }
 
@@ -233,6 +239,75 @@ ul {
   margin-top: 6rem;
   padding-bottom: 3rem;
   color: #ffffff;
+}
+
+.club--cover {
+  display: flex;
+  height: 100vh;
+  background-image: url("../images/appareil-photo-professionnel-arriere-plan-flou-ordinateur-portable.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.club--cover__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+}
+.club--cover__paragraphe {
+  margin: 1rem;
+}
+
+.club--about {
+  display: flex;
+  height: auto;
+  margin-top: 5rem;
+}
+.club--about__text {
+  background-color: rgba(207, 201, 201, 0.2156862745);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem 2rem 4rem;
+}
+.club--about__title {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+.club--about__paragraphe {
+  text-align: center;
+  margin-top: 2rem;
+}
+.club--about__link {
+  margin: 3rem auto 0;
+}
+
+.club--exit__container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+}
+.club--exit__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.club--exit__image {
+  width: 95%;
+  height: auto;
+}
+.club--exit__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.club--exit__paragraphe {
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 .button, .button--orange, .button--black {

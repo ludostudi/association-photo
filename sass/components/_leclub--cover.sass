@@ -1,0 +1,24 @@
+@use "../utils/_main" as utils
+
+.club--cover
+    //background-color: red
+    display: flex
+    height: 100vh
+    background-image: url("../images/appareil-photo-professionnel-arriere-plan-flou-ordinateur-portable.jpg")
+    background-size: cover
+    background-position: center
+
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 15rem
+
+    &__title
+        @extend %text-white
+        @extend %title-1  
+
+    &__paragraphe
+        @extend %default
+        @extend %text-white
+        margin: 1rem

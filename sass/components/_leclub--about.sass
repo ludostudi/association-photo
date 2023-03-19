@@ -1,0 +1,29 @@
+@use "../utils/_main" as utils
+
+.club--about
+   
+    display: flex
+    height: auto
+    margin-top: 5rem
+
+    &__text
+        background-color: utils.$color-greylight
+        border-radius: 3rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 4rem 2rem 4rem
+        @extend %default
+
+    &__title
+        margin-top: 2rem
+        text-transform: uppercase
+        @extend %text-orange
+        @extend %title-4
+
+    &__paragraphe
+        text-align: center
+        margin-top: 2rem
+
+    &__link
+        margin: 3rem auto 0
