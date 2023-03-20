@@ -1,4 +1,4 @@
-.button, .button--black, .button--orange, .club--marathon__text, .club--marathon__paragraphe, .club--studio__paragraphe, .club--exit__paragraphe, .club--about__text, .club--cover__paragraphe, .home--calendar__paragraphe, .home--discovery__paragraphe, .home--cover__paragraphe, .header__main-pages {
+.button, .button--black, .button--orange, .club--marathon__text, .club--marathon__paragraphe, .club--studio__paragraphe, .club--exit__paragraphe, .club--about__text, .club--cover__paragraphe, .home--evenement__paragraphe, .home--discovery__paragraphe, .home--cover__paragraphe, .header__main-pages {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 
-.club--studio__title, .club--exit__title, .home--calendar__title, .home--discovery__title {
+.club--studio__title, .club--exit__title, .home--evenement__title, .home--discovery__title {
   font-family: "Raleway", sans-serif;
   font-size: 2.6rem;
   font-weight: 300;
@@ -34,7 +34,7 @@
   font-weight: 400;
 }
 
-.club--marathon__title, .club--studio__title, .club--exit__title, .club--about__title, .footer__follow-title, .footer__where-title, .footer__contact-title, .home--calendar__title, .home--discovery__title, .header__main-pages {
+.club--marathon__title, .club--studio__title, .club--exit__title, .club--about__title, .home--evenement__title, .home--discovery__title, .footer__follow-title, .footer__where-title, .footer__contact-title, .header__main-pages {
   color: #a2894d;
 }
 
@@ -84,96 +84,6 @@ ul {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
   text-transform: uppercase;
-}
-
-.home--cover {
-  display: flex;
-  height: 100vh;
-  background-image: url("../images/appareil-photo-professionnel-flou.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.home--cover__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15rem;
-}
-.home--cover__paragraphe {
-  margin: 1rem;
-}
-.home--cover__link {
-  margin-top: 2rem;
-}
-
-.home--discovery__container {
-  background-color: rgba(207, 201, 201, 0.2156862745);
-  border-radius: 3rem;
-  display: flex;
-  height: auto;
-  margin-top: 5rem;
-}
-.home--discovery__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 0 2rem 4rem;
-}
-.home--discovery__title {
-  margin-top: 2rem;
-  text-transform: uppercase;
-}
-.home--discovery__paragraphe {
-  text-align: justify;
-  margin-top: 2rem;
-}
-.home--discovery__link {
-  margin: 3rem auto 0;
-}
-.home--discovery__media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 96%;
-}
-.home--discovery__svg {
-  width: 35%;
-  height: auto;
-}
-
-.home--calendar__container {
-  background-color: rgba(207, 201, 201, 0.2156862745);
-  border-radius: 3rem;
-  display: flex;
-  height: auto;
-  margin-top: 5rem;
-}
-.home--calendar__media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-}
-.home--calendar__svg {
-  width: 37.5%;
-  height: auto;
-}
-.home--calendar__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 4rem 2rem 4rem;
-}
-.home--calendar__title {
-  margin-top: 2rem;
-  text-transform: uppercase;
-}
-.home--calendar__paragraphe {
-  text-align: justify;
-  margin-top: 2rem;
-}
-.home--calendar__link {
-  margin: 3rem auto 0;
 }
 
 .footer {
@@ -241,6 +151,96 @@ ul {
   color: #ffffff;
 }
 
+.home--cover {
+  display: flex;
+  height: 100vh;
+  background-image: url("../images/appareil-photo-professionnel-flou.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.home--cover__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+}
+.home--cover__paragraphe {
+  margin: 1rem;
+}
+.home--cover__link {
+  margin-top: 2rem;
+}
+
+.home--discovery__container {
+  background-color: rgba(207, 201, 201, 0.2156862745);
+  border-radius: 3rem;
+  display: flex;
+  height: auto;
+  margin-top: 5rem;
+}
+.home--discovery__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2rem 4rem;
+}
+.home--discovery__title {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+.home--discovery__paragraphe {
+  text-align: justify;
+  margin-top: 2rem;
+}
+.home--discovery__link {
+  margin: 3rem auto 0;
+}
+.home--discovery__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+}
+.home--discovery__svg {
+  width: 35%;
+  height: auto;
+}
+
+.home--evenement__container {
+  background-color: rgba(207, 201, 201, 0.2156862745);
+  border-radius: 3rem;
+  display: flex;
+  height: auto;
+  margin-top: 5rem;
+}
+.home--evenement__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.home--evenement__svg {
+  width: 37.5%;
+  height: auto;
+}
+.home--evenement__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem 2rem 4rem;
+}
+.home--evenement__title {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+.home--evenement__paragraphe {
+  text-align: justify;
+  margin-top: 2rem;
+}
+.home--evenement__link {
+  margin: 3rem auto 0;
+}
+
 .club--cover {
   display: flex;
   height: 100vh;
@@ -258,12 +258,8 @@ ul {
   margin: 1rem;
 }
 
-.club--about {
-  display: flex;
-  height: auto;
-  margin-top: 5rem;
-}
 .club--about__text {
+  margin-top: 5rem;
   background-color: rgba(207, 201, 201, 0.2156862745);
   border-radius: 3rem;
   display: flex;
@@ -339,15 +335,13 @@ ul {
   border-radius: 3rem;
 }
 
-.club--marathon {
-  margin-top: 5rem;
+.club--marathon__text {
   display: flex;
-  height: auto;
+  margin-top: 5rem;
   flex-direction: column;
   align-items: center;
 }
 .club--marathon__title {
-  margin-top: 2rem;
   text-transform: uppercase;
 }
 .club--marathon__paragraphe {

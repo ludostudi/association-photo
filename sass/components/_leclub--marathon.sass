@@ -1,17 +1,15 @@
 @use "../utils/_main" as utils
 
 .club--marathon
-    margin-top: 5rem
-    display: flex
-    height: auto
-    flex-direction: column
-    align-items: center
     
     &__text
+        display: flex
+        margin-top: 5rem
+        flex-direction: column
+        align-items: center
         @extend %default
 
     &__title
-        margin-top: 2rem
         text-transform: uppercase
         @extend %text-orange
         @extend %title-4
