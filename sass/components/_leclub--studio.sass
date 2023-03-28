@@ -2,11 +2,23 @@
 
 .club--studio
 
+    @include utils.responsive (tablet)
+        margin-left: 0.5rem
+        margin-right: 0.5rem
+
     &__container
-        margin-top: 5rem
         display: flex
-        justify-content: space-evenly
-        height: auto
+        
+        @include utils.responsive (phone)
+            margin-top: 2rem
+            flex-direction: column
+
+
+        @include utils.responsive (laptop)
+            margin-top: 5rem
+            justify-content: space-evenly
+            height: auto
+
 
     &__text
         display: flex
@@ -14,9 +26,18 @@
         align-items: center
         justify-content: center
 
+        @include utils.responsive (tablet)
+            padding-left: 5rem
+
     &__title
         @extend %text-orange
         @extend %title-2
+
+        @include utils.responsive (phone)
+            font-size: 1.8rem
+
+        @include utils.responsive (tablet)
+            font-size: 1.8rem
 
     &__paragraphe
         text-align: center
@@ -33,3 +54,11 @@
         width: 95%
         height: auto
         border-radius: 3rem
+
+
+        @include utils.responsive (phone)
+            margin-top: 2rem
+            width: 80%
+    
+        @include utils.responsive (tablet)
+            width: 79%

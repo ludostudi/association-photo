@@ -1,0 +1,16 @@
+
+@mixin responsive ($device)
+    @if $device == "phone"
+        @media (425px <= width <= 768px)
+            @content
+    
+    @else if $device == "tablet"
+        @media (768px <= width <= 1200px)
+            @content
+
+    @else if $device == "laptop"
+        @media (min-width: 768px)
+            @content
+
+    @else 
+        @error "The device not found"

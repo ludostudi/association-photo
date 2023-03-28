@@ -1,6 +1,7 @@
 @use "../utils/_main" as utils
 
 .home--evenement
+    display: flex
     
     &__container
         background-color: utils.$color-greylight
@@ -9,15 +10,30 @@
         height: auto
         margin-top: 5rem
 
+        @include utils.responsive (phone)
+            flex-direction: column
+            margin-left: 0.5rem
+            margin-right: 0.5rem
+
+        @include utils.responsive (tablet)
+            margin-left: 0.5rem
+            margin-right: 0.5rem
+
     &__media
         display: flex
         justify-content: center
-        align-items: center
-        width: 70%
+
+        @include utils.responsive (laptop)
+            align-items: center
+            width: 70%
 
     &__svg
-        width: 37.5%
+        width: 40%
         height: auto
+
+        @include utils.responsive (phone)
+            margin-top: 3rem
+            width: 15%
 
     &__text
         display: flex
@@ -25,16 +41,28 @@
         align-items: center
         padding: 0 4rem 2rem 4rem
 
+        @include utils.responsive (phone)
+            padding: 1rem
+
     &__title
         margin-top: 2rem
         text-transform: uppercase
         @extend %text-orange
         @extend %title-2
 
+        @include utils.responsive (phone)
+            font-size: 1.6rem
+
+        @include utils.responsive (tablet)
+            font-size: 2rem
+
     &__paragraphe
+        @extend %default
         text-align: justify
         margin-top: 2rem
-        @extend %default
+
+        @include utils.responsive (phone)
+            text-align: center
 
     &__link
         margin: 3rem auto 0

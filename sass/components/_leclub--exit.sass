@@ -1,12 +1,23 @@
 @use "../utils/_main" as utils
 
 .club--exit
+
+    @include utils.responsive (tablet)
+        margin-left: 0.5rem
+        margin-right: 0.5rem
     
     &__container
-        margin-top: 5rem
         display: flex
-        justify-content: space-evenly
-        height: auto
+
+        @include utils.responsive (phone)
+            margin-top: 2rem
+            flex-direction: column-reverse
+
+
+        @include utils.responsive (laptop)
+            margin-top: 5rem
+            justify-content: space-evenly
+            height: auto
 
     &__media
         display: flex
@@ -18,15 +29,32 @@
         height: auto
         border-radius: 3rem
 
+        @include utils.responsive (phone)
+            margin-top: 2rem
+            width: 80%
+    
+        @include utils.responsive (tablet)
+            width: 70%
+
+
     &__text
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
+
+        @include utils.responsive (tablet)
+            padding-right: 5rem
         
     &__title
         @extend %text-orange
         @extend %title-2
+
+        @include utils.responsive (phone)
+            font-size: 1.8rem
+
+        @include utils.responsive (tablet)
+            font-size: 1.8rem
 
     &__paragraphe
         text-align: center

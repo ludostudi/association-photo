@@ -1,24 +1,37 @@
 @use "../utils/_main" as utils
 
 .footer
-    display: block
     background-color: utils.$color-black
+    margin-top: 5rem
+
+    @include utils.responsive (phone)
+        margin-top: 3rem
     
     &__container
         display: flex
-        justify-content: center
-        margin-top: 5rem
+        
+        @include utils.responsive (phone)
+            flex-direction: column
+            align-items: center
+        
+        @include utils.responsive (laptop)
+            justify-content: center
     
     &__follow
         display: flex
         flex-direction: column
         align-items: center
-        width: 30%
+
+        @include utils.responsive (laptop)
+            width: 30%
 
     &__follow-title
-        margin-top: 5rem
+        margin-top: 2rem
         @extend %text-orange
         @extend %title-3
+
+        @include utils.responsive (laptop)
+            margin-top: 5rem
 
     &__follow-logo
         margin-top: 1rem
@@ -30,34 +43,47 @@
         display: flex
         flex-direction: column
         align-items: center
-        width: 30%
+
+        @include utils.responsive (laptop)
+            width: 30%
 
     &__where-title
-        margin-top: 5rem
+        margin-top: 2rem
         @extend %text-orange
         @extend %title-3
 
+        @include utils.responsive (laptop)
+            margin-top: 5rem
+
     &__where-address
         margin-top: 1rem
+        @extend %default
         color: utils.$color-white
 
     &__where-time
         margin-top: 1rem
+        @extend %default
         color: utils.$color-orange
 
     &__contact
         display: flex
         flex-direction: column
         align-items: center
-        width: 30%
+
+        @include utils.responsive (laptop)
+            width: 30%
 
     &__contact-title
-        margin-top: 5rem
+        margin-top: 2rem
         @extend %text-orange
         @extend %title-3
 
+        @include utils.responsive (laptop)
+            margin-top: 5rem
+
     &__contact-mail
         margin-top: 1rem
+        @extend %default
         color: utils.$color-white
 
     &__copyright
@@ -66,7 +92,11 @@
         align-items: center
 
     &__copyright-text
+        @extend %default
         @extend %copyright
-        margin-top: 6rem
+        margin-top: 3rem
         padding-bottom: 3rem
         color: utils.$color-white
+
+        @include utils.responsive (laptop)
+            margin-top: 6rem
