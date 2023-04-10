@@ -484,6 +484,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 4rem 2rem 4rem;
 }
 @media (425px <= width <= 768px) {
   .club--about__text {
@@ -705,6 +706,10 @@ ul {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+
+.evenements--calendar__img {
+  width: 60%;
 }
 
 .button, .button--orange, .button--black {
