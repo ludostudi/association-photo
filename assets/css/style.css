@@ -708,8 +708,11 @@ ul {
   margin-bottom: 3rem;
 }
 
-.evenements--calendar__img {
-  width: 60%;
+.evenement__img {
+  width: 100%;
+}
+.evenement__text {
+  text-align: justify;
 }
 
 .button, .button--orange, .button--black {
