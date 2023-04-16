@@ -708,8 +708,54 @@ ul {
   margin-bottom: 3rem;
 }
 
-.evenements--calendar__img {
-  width: 60%;
+.evenement {
+  width: 80%;
+  padding: 2rem 0 3rem 0;
+  background-color: rgba(207, 201, 201, 0.2156862745);
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.evenement__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.evenement__title {
+  font-size: 1.4rem;
+}
+.evenement__subtitle {
+  font-size: 1.25rem;
+}
+.evenement__content {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .evenement__content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.evenement__media {
+  display: flex;
+  justify-content: center;
+}
+.evenement__img {
+  margin-top: 1rem;
+  width: 90%;
+}
+@media (min-width: 992px) {
+  .evenement__img {
+    width: 70%;
+  }
+}
+.evenement__text {
+  padding: 0 2rem 0 2rem;
+  margin-top: 1.2rem;
+  text-align: justify;
 }
 
 .button, .button--orange, .button--black {
