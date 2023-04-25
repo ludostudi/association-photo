@@ -1,0 +1,77 @@
+@use "../utils/_main" as utils
+
+.gallery
+    display: grid
+    background-color: black
+    padding: 1rem 1rem
+    
+
+    @include utils.responsive (laptop)
+        grid-template-columns: repeat(12, 1fr)
+        grid-template-rows: repeat(16, 5vw)
+        grid-gap: 15px
+
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: contain
+        display: block
+
+    &__item--1
+
+        @include utils.responsive (laptop)
+            grid-column-start: 1
+            grid-column-end: 8
+            grid-row-start: 1
+            grid-row-end: 6
+            background-color: black
+
+    &__item--2
+        margin-top: 3rem
+
+        @include utils.responsive (laptop)
+            grid-column-start: 8
+            grid-column-end: 13
+            grid-row-start: 1
+            grid-row-end: 4
+            background-color: black
+
+    &__item--3
+        margin-top: 3rem
+
+        @include utils.responsive (laptop)
+            grid-column-start: 8
+            grid-column-end: 13
+            grid-row-start: 4
+            grid-row-end: 12
+            background-color: black
+
+    &__item--4
+        margin-top: 3rem
+
+        @include utils.responsive (laptop)
+            grid-column-start: 1
+            grid-column-end: 8
+            grid-row-start: 6
+            grid-row-end: 11
+            background-color: black
+
+    &__item--5
+        margin-top: 3rem
+
+        @include utils.responsive (laptop)
+            grid-column-start: 1
+            grid-column-end: 8
+            grid-row-start: 11
+            grid-row-end: 16
+            background-color: black
+
+    &__item--6
+        margin-top: 3rem
+
+        @include utils.responsive (laptop)
+            grid-column-start: 8
+            grid-column-end: 13
+            grid-row-start: 12
+            grid-row-end: 16
+            background-color: black
